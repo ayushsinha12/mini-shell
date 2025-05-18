@@ -78,9 +78,15 @@ shell $ help
 
 ## File Structure
 ```bash
-├── shell.c           # Main shell implementation
-├── tokens.c/.h       # Tokenizer logic
-├── vect.c/.h         # Vector helper for token lists
-├── Makefile          # Build & test automation
-├── test/             # Tokenizer and shell tests
+├── examples/
+│   └── tokenize_expr.c       # Demo/example driver
+├── tests/
+│   ├── shell_test_helpers.py
+│   ├── shell_tests.py
+│   └── tokenize_tests.py     # Python test suite
+├── .gitignore
+├── Makefile                  # Build & test automation
+├── README.md
+├── shell.c                   # Main shell implementation
+└── tokenize.c                # Tokenizer implementation
 ```
